@@ -1,0 +1,92 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500&family=Satisfy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cinzel:wght@600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Raleway&display=swap');
+$color-dark:rgb(0, 0, 0);
+$color-light:#fff;
+$color-semidark:rgb(22, 22, 22);
+$color-semilight:rgb(138, 138, 138);
+$color-rojo:rgb(201, 2, 2);
+@mixin textGradient {
+    background-image: linear-gradient(to top,$color-rojo, $color-light);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(201, 2, 2);
+}
+@mixin centradoMargin {
+    margin-left: auto;
+    margin-right: auto;
+}
+@mixin centradoDispley {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+*{
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    margin: 0;
+    background-color: $color-dark;
+    color: $color-semilight;
+    display: flex;
+    font-family: 'Montserrat', sans-serif; 
+}
+ul{
+    list-style: none;
+    margin: 0;
+    margin-block-start: 0;
+    margin-block-end: 0;
+    padding-inline-start: 0;
+}
+a{
+    text-decoration: none;
+    color: $color-semilight;
+}
+p{
+    margin-top: 0;
+}
+img{
+    display: block;
+    max-width: 100%;
+}
+.desanimado{
+    opacity: 0;
+    transition: all 1s;
+}
+.animado--izquierda{
+    animation: izquierda 900ms;
+}
+@keyframes izquierda {
+    0%{
+        transform: translateX(-100%);
+        opacity: 0;
+    }100%{
+        transform: translateX(0);
+        opacity: 1;
+    }
+}
+.animado--derecha{
+    animation: derecha 900ms;
+}
+@keyframes derecha {
+    0%{
+        transform: translateX(100%);
+        opacity: 0;
+    } 100%{
+        transform: translate(0);
+        opacity: 1;
+    }
+}
+.delay1{
+    animation-delay: 300ms;
+}
+.delay2{
+    animation-delay: 600ms;
+}
+.delay3{
+    animation-delay: 900ms;
+}
+.delay4{
+    animation-delay: 1200ms;
+}
