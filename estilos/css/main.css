@@ -757,7 +757,7 @@ img {
   padding: 10px 20px;
   border-radius: 5px;
   color: #fff;
-  font-size: 1.5rem;
+  font-size: 1.3rem;
   border: 0 solid;
   box-shadow: inset 0 0 20px rgba(255, 255, 255, 0);
   outline: 1px solid;
@@ -997,5 +997,13 @@ img {
     margin: 0;
   }
 }
-
+.git-portafolio{
+  display: inline;
+  text-decoration: underline;
+  /* color: blue; */
+}
+.text-portafolio{
+  font-size: 1.4rem;
+  font-weight: bold;
+}
 /*# sourceMappingURL=main.css.map */
