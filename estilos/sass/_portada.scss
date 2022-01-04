@@ -166,6 +166,28 @@
         letter-spacing: 2px;
     }
 }
+.flags{
+    width: 120px;
+    height: 45px;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    .flag{
+        width: 48%;
+        height: 100%;
+        filter: grayscale(1);
+        img{
+            display: block;
+            width: 100%;
+            height: 100%;
+        }
+    }
+    .flag--active{
+        filter: grayscale(0);
+    }
+}
 @media screen and(max-width:1100px){
     .main--modificado{
         width: 100%;

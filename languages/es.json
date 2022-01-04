@@ -1,0 +1,44 @@
+{
+    "header":{
+        "portada":"Inicio",
+        "skills":"Habilidades",
+        "portafolio":"Portafolio",
+        "contact":"Contactame"
+    },
+    "page":{
+        "name": "Soy BryanDeveloper",
+        "title":"Desarrollador <span>FRONT END</span>",
+        "button":"Acompañame",
+        "status":"programador"      
+    },
+    "about":{
+        "title":"Acerca de mí",
+        "text":"¡Hola!Mi nombre es Bryan.Soy un desarrollador front end que se especializa en maquetación web,comenzé en esta sección de mi carrera,ingenieria de sistemas, desde inicios del 2021 y desde entonces no he parado de programar todos los días.Estoy confiado en lo que puedo hacer pero trabajando constantemente para mejorar mis habilidades.",
+        "description":"Mis conocimientos son de:"
+    },
+    "briefcase":{
+        "title":"Portafolio"
+    },
+    "skills":{
+        "title":"Habilidades",
+        "lvl":"Nivel de aprendizaje: <span>Junior</span> ",
+        "html":"Es lo primero que aprendí de las tecnologías de desarrollo web,considero que ellenguaje de marcado de hipertexto es el esqueleto de toda página.",
+        "sass":
+            "Para fortaleces mi css aprendí este preprocesador que ayuda a agilizar y ordenar más micódigo de estilo",
+        "css":
+            "El segundo escalón de mi camino de aprendizaje,pienso que las hojas de estilo en cascada esmuy importante para el impacto en los clientes.",
+        "vue":
+            "Para la actualidad los frameworks son importantes para tener un marco de referencia de comotrabajar asi que Vue 3 esta en mis capacidades.",
+        "js":
+            "El tercer pilar en el desarrollo de páginas ,esta teconolgía es muy importante para lainteracción y seguridad con los visitantes .",
+        "git":
+            "Es importante trabajar en equipo para el desarrollo web y tener en control las versiones detu trabajo he aprendido Git y Github ."
+        
+    },
+    "footer":{
+        "passion":"Elegí esta profesión porque las horas se hacen minutos cuando estoy frente al teclado escribiendo código y porque me encanta ver el resultado del trabajo entre la parte creativa y lógica de mi mente .",
+        "link":"Ver código del portafolio:<a href='https://github.com/brayan1996/my-portafolio' class='git-portafolio' target='_blank'>GITHUB</a>",
+        "contact":"Puedes contactarte conmigo por medio de mi correo : <span>brayan.ha.1996@gmail.com</span>O de mis redes sociales"
+
+    }
+}

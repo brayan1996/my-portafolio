@@ -1,0 +1,44 @@
+{
+    "header":{
+        "portada":"Home",
+        "skills":"Skills",
+        "portafolio":"Briefcase",
+        "contact":"Contact me"
+    },
+    "page":{
+        "name": "I'm BryanDeveloper",
+        "title":"<span>FRONT END</span> Developer",
+        "button":"Accompany me",
+        "status":"programmer"
+    },
+    "about":{
+        "title":"About me",
+        "text":"Hello! My name is Bryan. I am a front end developer who specializes in web design, I started in this section of my career, systems engineering, since the beginning of 2021 and since then I have not stopped programming every day. I am confident in what I can do but constantly working to improve my skills.",
+        "description":"My knowledge is from:"
+    },
+    "briefcase":{
+        "title":"Briefcase"
+    },
+    "skills":{
+        "title":"skills",
+        "lvl":"Level of learning: <span>Junior</span> ",
+        "html":"It is the first thing I learned about web development technologies, I consider that the hypertext markup language is the skeleton of every page.",
+        "sass":
+            "To strengthen my css I learned this preprocessor that helps to streamline and order more my style code",
+        "css":
+            "The second step of my learning journey, I think cascading style sheets is very important for impact on clients.",
+        "vue":
+            "For today, frameworks are important to have a framework of how to work, so Vue 3 is within my capabilities.",
+        "js":
+            "The third pillar in page development, this technology is very important for interaction and security with visitors.",
+        "git":
+            "It is important to work as a team for web development and to have control of the versions of your work I have learned Git and Github."
+        
+    },
+    "footer":{
+        "passion":"I chose this profession because hours become minutes when I am in front of the keyboard writing code and because I love to see the result of the work between the creative and logical part of my mind.",
+        "link":"See portfolio code:<a href='https://github.com/brayan1996/my-portafolio' class='git-portafolio' target='_blank'>GITHUB</a>",
+        "contact":"You can contact me through my email: <span> brayan.ha.1996@gmail.com </span> Or my social networks"
+
+    }
+}

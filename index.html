@@ -16,24 +16,54 @@
                 <p>Bryan Developer</p>
             </div>
             <ul id="navegacion__links">
-                <li class="navegacion__elemento"><a href="#portada">Inicio</a></li>
-                <li class="navegacion__elemento"><a href="#about">About</a></li>
-                <li class="navegacion__elemento"><a href="#skills">Habilidades</a></li>
-                <li class="navegacion__elemento"><a href="#portafolio">Portafolio</a></li>
-                <li class="navegacion__elemento"><a href="#footer">Contactame</a></li>
+                <li 
+                    class="navegacion__elemento"
+                    data-section="header"
+                    data-value="portada"
+                ><a href="#portada">Inicio</a></li>
+                <li 
+                    class="navegacion__elemento"
+                ><a href="#about">About</a></li>
+                <li 
+                    class="navegacion__elemento"
+                    data-section="header"
+                    data-value="skills"
+                ><a href="#skills">Habilidades</a></li>
+                <li 
+                    class="navegacion__elemento"
+                    data-section="header"
+                    data-value="portafolio"
+                ><a href="#portafolio">Portafolio</a></li>
+                <li 
+                    class="navegacion__elemento"
+                    data-section="header"
+                    data-value="contact"
+                ><a href="#footer">Contactame</a></li>
             </ul>
             <div class="navegacion__redes">
                 <div class="navegacion__red">
-                    <img src="img/icono/fb.svg" alt="">
+                    <a href="https://www.facebook.com/brayan.hurtadoalvarado/" target="_blank">
+                        <img src="img/icono/fb.svg" alt="imagen fb">
+                    </a>
                 </div>
                 <div class="navegacion__red">
-                    <img src="img/icono/inst.svg" alt="">
+                    <a href="" target="_blank">
+                        <img src="img/icono/inst.svg" alt="imagen inst">
+                    </a>
                 </div>
                 <div class="navegacion__red">
-                    <img src="img/icono/linkedin.svg" alt="">
+                    <a  href="https://www.linkedin.com/in/brayan-hurtado-a82200177/" 
+                        target="_blank"
+                    >
+                        <img src="img/icono/linkedin.svg" alt="imagen linkedin">
+                    </a>
                 </div>
                 <div class="navegacion__red">
-                    <img src="img/icono/github.svg" alt="">
+                    <a  href="https://github.com/brayan1996?tab=repositories" 
+                        target="_blank"
+                    >
+                        <img src="img/icono/github.svg" alt="imagen git">
+                    </a>
                 </div>
             </div>
         </nav>
@@ -47,25 +77,75 @@
             <img src="img/icono/derecha.svg" id="menu--img" alt="icono derecha">
         </div>  
         <div class="portada" id="portada">
+            <div class="flags" id="flags">
+                <div 
+                    class="flag flag--active"
+                    id="flag__es"
+                    data-language="es"
+                >
+                    <img src="img/flags/es.svg" alt="bandera de epaña">
+                </div>
+                <div 
+                    class="flag"
+                    id="flag__en"
+                    data-language="en"
+                >
+                    <img src="img/flags/en.svg" alt="bandera de uk">
+                </div>
+            </div> 
             <div class="portada__texto">
-                 <p class="nombre">Soy BryanDeveloper</p>  
-                  <h1 class="titulo"> Desarrollador <span>FRONT END</span></h1>  
-                 <a href="#" class="boton">Acompañame</a> 
+                 <p 
+                    class="nombre" 
+                    data-section="page" 
+                    data-value="name"
+                >Soy BryanDeveloper</p>  
+                <h1 
+                    class="titulo" 
+                    data-section="page" 
+                    data-value="title"
+                > Desarrollador <span>FRONT END</span></h1>  
+                 <a 
+                    href="#" 
+                    class="boton" 
+                    data-section="page" 
+                    data-value="button"
+                >Acompañame</a> 
                  <div class="portada__abajo">
-                    <img src="img/icono/abajo.svg" alt="">
+                    <img src="img/icono/abajo.svg" alt="icono abajo">
                 </div> 
             </div>
             <figure class="logo" id="logo">
-                <img src="img/icono/progra2.svg" alt="programador" class="logo__icono">
-                <p class="logo__texto">Programador</p>
+                <img 
+                    src="img/icono/progra2.svg" 
+                    alt="programador" 
+                    class="logo__icono"
+                >
+                <p class="logo__texto" data-section="page" data-value="status">Programador</p>
             </figure> 
         </div>
         <section class="about" id="about">
-            <h2 class="subtitle observado desanimado" id="about__subtitle">Acerca de mí</h2>
-            <div class="about-texto" id="about-texto">
-                <p>¡Hola!Mi nombre es Bryan.Soy un desarrollador front end que se especializa en maquetación web,comenzé en esta sección 
-                    de mi carrera,ingenieria de sistemas, desde inicios del 2021 y desde entonces no he parado de programar todos los días.Estoy confiado en lo que puedo hacer pero trabajando constantemente para mejorar mis habilidades. </p>
-                <P class="about-texto__parrafo">Mis conocimientos son de: </p>
+            <h2 
+                class="subtitle observado desanimado" 
+                id="about__subtitle"
+                data-section="about"
+                data-value="title"
+            >Acerca de mí</h2>
+            <div 
+                class="about-texto" 
+                id="about-texto"
+            >
+                <p  
+                    data-section="about"
+                    data-value="text"
+                >
+                ¡Hola!Mi nombre es Bryan.Soy un desarrollador front end que se especializa en maquetación web,comenzé en esta sección 
+                    de mi carrera,ingenieria de sistemas, desde inicios del 2021 y desde entonces no he parado de programar todos los días.Estoy confiado en lo que puedo hacer pero trabajando constantemente para mejorar mis habilidades. 
+                </p>
+                <P 
+                    class="about-texto__parrafo"
+                    data-section="about"
+                    data-value="description"
+                >Mis conocimientos son de: </p>
                 <span class="typed"></span>
             </div>
             <figure class="about-img observado desanimado" id="about-img">
@@ -73,13 +153,23 @@
             </figure>
         </section>
         <section class="skills" id="skills">
-            <h2>Habilidades</h2>
+            <h2 
+                data-section="skills"
+                data-value="title"
+            >Habilidades</h2>
             <div class="contenedor">
                 <div class="skill" >
                     <div class="skill__texto">
                         <h3 class="skill__titulo">HTML</h3>
-                        <p>Es lo primero que aprendí de las teconologías de desarrollo web,considero que el lenguaje de marcado de hipertexto es el esqueleto de toda página  .</p>
-                        <p class="skill__lvl">Nivel de aprendizaje: <span>Junior</span> </p>
+                        <p
+                            data-section="skills"
+                            data-value="html"
+                        >Es lo primero que aprendí de las tecnologías de desarrollo web,considero que el lenguaje de marcado de hipertexto es el esqueleto de toda página  .</p>
+                        <p 
+                            class="skill__lvl"
+                            data-section="skills"
+                            data-value="lvl"
+                        >Nivel de aprendizaje: <span>Junior</span> </p>
                     </div>
                     <div class="skil__img">
                         <img src="img/icono/html.svg" alt="icono html">
@@ -88,8 +178,15 @@
                 <div class="skill">
                     <div class="skill__texto">
                         <h3 class="skill__titulo">SASS</h3>
-                        <p>Para fortaleces mi css aprendí este preprocesador que ayuda a agilizar y ordenar más mi código de estilo</p>
-                        <p class="skill__lvl">Nivel de aprendizaje: <span>Intermedio</span> </p>
+                        <p
+                            data-section="skills"
+                            data-value="sass"
+                        >Para fortaleces mi css aprendí este preprocesador que ayuda a agilizar y ordenar más mi código de estilo</p>
+                        <p 
+                            class="skill__lvl"
+                            data-section="skills"
+                            data-value="lvl"
+                        >Nivel de aprendizaje: <span>Junior</span> </p>
                     </div>
                     <div class="skil__img">
                         <img src="img/icono/sass.svg" alt="icono sass">
@@ -98,8 +195,15 @@
                 <div class="skill">
                     <div class="skill__texto">
                         <h3 class="skill__titulo">CSS</h3>
-                        <p>El segundo escalón de mi camino de aprendizaje,pienso que las hojas de estilo en cascada es muy importante para el impacto en los clientes.</p>
-                        <p class="skill__lvl">Nivel de aprendizaje: <span>Junior</span> </p>
+                        <p
+                            data-section="skills"
+                            data-value="css"
+                        >El segundo escalón de mi camino de aprendizaje,pienso que las hojas de estilo en cascada es muy importante para el impacto en los clientes.</p>
+                        <p 
+                            class="skill__lvl"
+                            data-section="skills"
+                            data-value="lvl"
+                        >Nivel de aprendizaje: <span>Junior</span> </p>
                     </div>
                     <div class="skil__img">
                         <img src="img/icono/css.svg" alt="icono svg">
@@ -108,9 +212,15 @@
                 <div class="skill">
                     <div class="skill__texto">
                         <h3 class="skill__titulo">Vue </h3>
-                        <p>Para la actualidad los frameworks son importantes para tener un marco de referencia de como trabajar asi que 
-                            Vue 3 esta en mis capacidades.</p>
-                        <p class="skill__lvl">Nivel de aprendizaje: <span>Junior</span> </p>
+                        <p
+                            data-section="skills"
+                            data-value="vue"
+                        >Para la actualidad los frameworks son importantes para tener un marco de referencia de como trabajar asi que Vue 3 esta en mis capacidades.</p>
+                        <p 
+                            class="skill__lvl"
+                            data-section="skills"
+                            data-value="lvl"
+                        >Nivel de aprendizaje: <span>Junior</span> </p>
                     </div>
                     <div class="skil__img">
                         <img src="img/icono/diseno-web.svg" alt="icono dieño">
@@ -119,8 +229,15 @@
                 <div class="skill">
                     <div class="skill__texto">
                         <h3 class="skill__titulo">Javascript</h3>
-                        <p>El tercer pilar en el desarrollo de páginas ,esta teconolgía es muy importante para la interacción y seguridad con los visitantes .</p>
-                        <p class="skill__lvl">Nivel de aprendizaje: <span>Junior</span> </p>
+                        <p
+                            data-section="skills"
+                            data-value="js"
+                        >El tercer pilar en el desarrollo de páginas ,esta teconolgía es muy importante para la interacción y seguridad con los visitantes .</p>
+                        <p 
+                            class="skill__lvl"
+                            data-section="skills"
+                            data-value="lvl"
+                        >Nivel de aprendizaje: <span>Junior</span> </p>
                     </div>
                     <div class="skil__img">
                         <img src="img/icono/javascript.svg" alt="icono js">
@@ -129,8 +246,15 @@
                 <div class="skill">
                     <div class="skill__texto">
                         <h3 class="skill__titulo">GIT Y GITHUB</h3>
-                        <p>Es importante trabajar en equipo para el desarrollo web y tener en control las versiones de tu trabajo he aprendido Git y Github .</p>
-                        <p class="skill__lvl">Nivel de aprendizaje: <span>Básico</span> </p>
+                        <p
+                            data-section="skills"
+                            data-value="git"
+                        >Es importante trabajar en equipo para el desarrollo web y tener en control las versiones de tu trabajo he aprendido Git y Github .</p>
+                        <p 
+                            class="skill__lvl"
+                            data-section="skills"
+                            data-value="lvl"
+                        >Nivel de aprendizaje: <span>Junior</span> </p>
                     </div>
                     <div class="skil__img">
                         <img src="img/icono/github-logo.svg" alt="icono github">
@@ -140,7 +264,10 @@
             </div>
         </section>
         <section class="portafolio" id="portafolio">
-            <h2>Portafolio</h2>
+            <h2 
+                data-section="briefcase"
+                data-value="title"
+            >Portafolio</h2>
             <div class="container" id="container">
                 <div class="portafolio__box observado desanimado" data-nombre="Veterinaria VillaSalud" data-nivel="Proyecto"
                  data-url="https://veterinaria-general.netlify.app" id="box1">
@@ -180,10 +307,17 @@
         </section>
         <footer class="footer" id="footer">
             <div class="footer-texto">
-                <p>Elegí esta profesión porque las horas se hacen minutos cuando estoy frente al teclado 
+                <p
+                    data-section="footer"
+                    data-value="passion"
+                >Elegí esta profesión porque las horas se hacen minutos cuando estoy frente al teclado 
                     escribiendo código y porque me encanta ver el resultado del trabajo entre la parte 
                     creativa y lógica de mi mente .</p>
-                <p class="text-portafolio">Ver código del portafolio:
+                <p 
+                    class="text-portafolio"
+                    data-section="footer"
+                    data-value="link"
+                >Ver código del portafolio:
                     <a href="https://github.com/brayan1996/my-portafolio"
                     class="git-portafolio"
                     target="_blank">GITHUB</a>
@@ -191,19 +325,34 @@
                 
             </div>
             <div class="footer-contacto">
-                <p>Puedes contactarte conmigo por medio de mi correo : <span>brayan.ha.1996@gmail.com</span>O de mis redes sociales</p>
+                <p
+                    data-section="footer"
+                    data-value="contact"
+                >Puedes contactarte conmigo por medio de mi correo : <span>brayan.ha.1996@gmail.com</span>O de mis redes sociales</p>
                 <div class="footer__redes">
                     <div class="red">
-                        <img src="img/icono/fb.svg" alt="icono de facebook">
+                        <a href="https://www.facebook.com/brayan.hurtadoalvarado/" target="_blank">
+                            <img src="img/icono/fb.svg" alt="imagen fb">
+                        </a>
                     </div>
                     <div class="red">
-                        <img src="img/icono/inst.svg" alt="icono de instagram">
+                        <a href="" target="_blank">
+                            <img src="img/icono/inst.svg" alt="icono de instagram">
+                        </a>
                     </div>
                     <div class="red">
-                        <img src="img/icono/linkedin.svg" alt="icono de linkedin">
+                        <a  href="https://www.linkedin.com/in/brayan-hurtado-a82200177/" 
+                            target="_blank"
+                        >
+                            <img src="img/icono/linkedin.svg" alt="imagen linkedin">
+                        </a>
                     </div>
                     <div class="red">
-                        <img src="img/icono/github.svg" alt="icono de github">
+                        <a  href="https://github.com/brayan1996?tab=repositories" 
+                            target="_blank"
+                        >
+                            <img src="img/icono/github.svg" alt="imagen git">
+                        </a>
                     </div>
                 </div>
             </div>

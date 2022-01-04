@@ -87,6 +87,33 @@ const mover = (nombre)=>{
             break;
     }
 }
+//cambiar de idioma
+const flags = document.getElementById('flags')
+const flagEs = document.getElementById('flag__es')
+const flagEn = document.getElementById('flag__en')
+const textsToChange = document.querySelectorAll('[data-section]')
+const changeLenaguage = async(language) =>{
+    const respJson = await fetch(`./languages/${language}.json`)
+    const texts = await respJson.json()
+    return texts 
+}
+const paintFlags = (flag) =>{
+    let flagElement = flag.target.parentElement
+    let language = flagElement.dataset.language
+    flagEs.classList.remove('flag--active')
+    flagEn.classList.remove('flag--active')
+    flagElement.classList.add('flag--active')
+    return language
+}
+flags.addEventListener( 'click' ,async (flag)=>{
+    let language=paintFlags(flag)
+    const texts = await changeLenaguage(language)
+    textsToChange.forEach( text=>{
+        let section = text.dataset.section
+        let value = text.dataset.value
+        text.innerHTML = texts[section][value]
+    } )
+})
 // quitar el header modificado para medida celular
 const navegacion__links=document.getElementById('navegacion__links')
 navegacion__links.addEventListener('click',()=>{
