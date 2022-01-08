@@ -10,7 +10,7 @@ $color-rojo:rgb(201, 2, 2);
     background-image: linear-gradient(to top,$color-rojo, $color-light);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    color: rgb(201, 2, 2);
+    color: $color-rojo;
 }
 @mixin centradoMargin {
     margin-left: auto;
